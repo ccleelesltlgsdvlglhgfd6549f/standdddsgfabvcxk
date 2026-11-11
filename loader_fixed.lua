@@ -1,22 +1,10 @@
 -- Stand loader: runs the main script via loadstring
--- Users run:
---   getgenv().Script = "discord.gg/standd"
---   getgenv().Owner = "YOUR_USERNAME_THERE"
---   getgenv().DisableRendering = true
---   getgenv().FPSCap = 60
---   loadstring(game:HttpGet("THIS_LOADER_RAW_URL"))()
 local SCRIPT_URL = "https://raw.githubusercontent.com/ccleelesltlgsdvlglhgfd6549f/nvcxfdgs234ngfsdgjdfsgfdbnvfdcodfshbsfdfds8ghdfhdf7dfshvnbcndgfhfdg24fhgdsdsfadscxvcxvhdfsh8dbvc/refs/heads/main/stand_control.lua"
 local DISCORD_URL = "https://discord.gg/standd"
 
 --//------------------------------------------------------------------------------------------\\--
 
 if not game:IsLoaded() then game.Loaded:Wait() end
-
--- Lock: getgenv().Script must contain "discord.gg/standd" or nothing happens (no window, no script)
-do
-    local s = getgenv().Script
-    if type(s) ~= "string" or not s:find("discord.gg/standd", 1, true) then return end
-end
 
 local Players = game:GetService("Players")
 local UIS = game:GetService("UserInputService")
@@ -350,7 +338,7 @@ UIS.InputEnded:Connect(function(i)
     end
 end)
 
--- Start: open, find the info and type it in, then load the stand script by itself
+-- Start: open, find the info and type it in
 openAnim()
 task.spawn(function()
     task.wait(0.3)
@@ -361,6 +349,4 @@ task.spawn(function()
     typeIn(placeLbl, fmt("Place ID", tostring(game.PlaceId) .. "   Universe " .. tostring(game.GameId)))
     typeIn(playerLbl, fmt("Player", LocalPlayer.Name))
     typeIn(userLbl, fmt("User ID", tostring(LocalPlayer.UserId)))
-    task.wait(0.6)
-    if gui.Parent then run() end
 end)
