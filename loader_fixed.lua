@@ -5,8 +5,8 @@
 --   getgenv().DisableRendering = true
 --   getgenv().FPSCap = 60
 --   loadstring(game:HttpGet("THIS_LOADER_RAW_URL"))()
-local SCRIPT_URL = "https://raw.githubusercontent.com/MarasMwa/bvcfdgsdhsdfhs/refs/heads/main/fsdbvcgdf"
-local DISCORD_URL = "https://discord.gg/A4VurQvZt"
+local SCRIPT_URL = "https://raw.githubusercontent.com/ccleelesltlgsdvlglhgfd6549f/nvcxfdgs234ngfsdgjdfsgfdbnvfdcodfshbsfdfds8ghdfhdf7dfshvnbcndgfhfdg24fhgdsdsfadscxvcxvhdfsh8dbvc/refs/heads/main/stand_control.lua"
+local DISCORD_URL = "https://discord.gg/standd"
 
 --//------------------------------------------------------------------------------------------\\--
 
